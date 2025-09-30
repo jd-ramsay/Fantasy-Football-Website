@@ -1,0 +1,125 @@
+<html>
+<head>
+<title> Register Form</title>
+
+<link rel="stylesheet" href="mystyle.css">
+
+
+<style>
+
+
+
+ h1{font-size:50px;}
+ 
+ 
+      #register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+      }
+	  
+	  .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; 
+}
+
+	  #submitBtn{background-color: #6C6165;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:auto;
+  margin-top:20px;
+  cursor: pointer;
+  border-radius: 5px;
+  height:100px;
+  width:200px;
+
+  }
+	  
+	  p {
+       
+        margin-bottom: 40px; /* adjust the spacing as desired */
+    }
+	  
+	  
+	 @media only screen and (max-width: 800px){
+	 
+	 
+	 h1{font-size:30px;}
+	 
+	  #submitBtn{height:50px;
+  width:100px;
+  padding: 7.5px 16px;}
+	 
+ p {
+  
+  margin-bottom: 30px; 
+  font-size:12px;
+    
+}
+      
+      }
+	  
+	  
+	  
+    </style>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
+</head>
+
+<body>
+
+
+
+<h1 style = "text-align:center;padding-top:20px;" > Fantasy Football Register </h1> 
+
+
+
+
+
+<div id = "register">
+
+<form action="Register.php" method="POST">
+	<p>Username: <input type="text" name="uname" required> </p>
+		<p>Password: <input type="password" id="myInput" name="pword" required>  <input type="checkbox" onclick="myFunction()">Reveal Password </p>
+	<p>Your New Club Name: <input type="text" name="clubName" required> </p>
+	<p>Favourite Football Team: <input type="text" name="favteam" required> </p>
+	<p>Age: <input type="number" name="age" max="100"p>
+	<p>Email: <input type="email" name="email" required> </p>
+	<p>Phone Number: <input type="tel" name="phonenumber" pattern="[0-9]{11}" required> </p>
+	
+	 <div class="button-container">
+    <input type="submit" id="submitBtn" value="Register">
+	
+	
+  </div>
+
+	
+	
+</form>
+
+</div>
+</body>
+
+  
+<br><br>
+

@@ -1,0 +1,136 @@
+<html>
+<head>
+	<title>Login</title><link rel="stylesheet"  href="mystyle.css">
+
+<style>
+     
+	 
+	 h1{font-size:40px;}
+	 h2{font-size:28px;}
+	 
+	  
+	  	 
+   #login{
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+		 font-size: 20px;
+		
+      }
+	  
+	   .button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; 
+}
+
+	  #loginBtn{background-color: #6C6165;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:auto;
+  margin-top:20px;
+  cursor: pointer;
+  border-radius: 5px;
+  height:100px;
+  width:200px;
+
+  }
+  
+   @media only screen and (max-width: 800px) {  
+   
+   
+   #login{
+        
+		 font-size: 15px;
+		}
+		
+		
+		 h1{font-size:30px;}
+		 
+		  #loginBtn{
+  height:75px;
+  width:150px;
+
+      }
+  
+    </style>
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+	</head>
+	
+	
+	
+	
+	
+	<body>
+
+		
+		
+	
+			
+		
+			
+		
+			
+			
+			
+			
+			
+			<h1 style = "text-align:center;padding-top:20px;"> Football Draft Login </h1> 
+			
+			
+			
+			
+				 
+				
+				
+				
+				<div id="login">
+				<h2>Log in</h2><p>Enter your username and password below then click login:</p>
+					<form method="post" action="login.php">
+						<p>Username: <input type="text" name="userName"  > </p>
+							<p>Password: <input type="password" id = "myInput" name="userPass"  >  <input type="checkbox" onclick="myFunction()">Reveal Password </p> 
+								<div class="button-container">
+								
+								
+								<input type="submit" id = "loginBtn" value = "Login" >
+								
+								</div>
+								
+				
+				
+				
+				</form>
+				
+			<p>Don't have an account?</p>	<a href='RegisterPage.html'>Register here</a>
+				
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				</body>  
+
+
+				</html>
